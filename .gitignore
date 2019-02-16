@@ -17,6 +17,7 @@ coverage
 .lock-wscript
 build/*.js
 dist/*.js
+dist/*.js.map
 jspm_packages/
 typings/
 .npm
@@ -28,4 +29,4 @@ typings/
 .DS_Store
 .tmp
 .idea
-.vs
+.vscode

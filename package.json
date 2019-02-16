@@ -1,11 +1,13 @@
 {
   "scripts": {
-    "build": "node_modules/.bin/babel src -d dist --source-maps",
+    "build": "babel src -d dist --source-maps",
     "serve": "node dist/main.js",
     "start": "babel-node src/main.js",
     "start:dev": "npm run prettier && npm run eslint && node_modules/.bin/nodemon src/main.js --exec babel-node",
     "prettier": "node_modules/.bin/prettier --check src/**/*.js --write {{changed}}",
-    "eslint": "node_modules/.bin/eslint src/**/*.js --ignore-pattern \"node_modules/\""
+    "eslint": "node_modules/.bin/eslint src/**/*.js --ignore-pattern \"node_modules/\"",
+    "test": "jest",
+    "coverage": "jest --coverage --runInBand --verbose"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -13,12 +15,20 @@
     "@babel/node": "^7.2.2",
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^24.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "eslint": "^5.14.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.1.0",
+    "jest-cli": "^24.1.0",
+    "jsdoc": "^3.5.5",
     "nodemon": "^1.18.10",
     "onchange": "^5.2.0",
     "prettier": "^1.16.4"
