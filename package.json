@@ -7,7 +7,8 @@
     "prettier": "node_modules/.bin/prettier --check src/**/*.js --write {{changed}}",
     "eslint": "node_modules/.bin/eslint src/**/*.js --ignore-pattern \"node_modules/\"",
     "test": "jest",
-    "coverage": "jest --coverage --runInBand --verbose"
+    "coverage": "jest --coverage --runInBand --verbose",
+    "docs": "node_modules/.bin/jsdoc src/*.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

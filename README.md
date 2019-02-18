@@ -1,5 +1,7 @@
 # TP_NODEJS
 
+Estructura Base preconfigurada para un proyecto Nodejs con control de calida minimo. 
+
 ## ESLint
   Configurado con la guia de estilo de airbnb.
 
@@ -21,14 +23,15 @@
 ## Jest
   En la carpeta test se pueden ver algunas pruebas basicas.
 
-  se ejecuta con yarn test ó npm run test
+  Se ejecuta con yarn test ó npm run test
 
 ## JsDoc3
   Se genera documentación del código mediante comentarios en el mismo en forma de html en la carpeta out.
 
-  se ejecuta usando jsdoc file.js
+  Se ejecuta con yarn docs ó npm run docs.
 
 ## Scripts
+  Se ejecuta con yarn ó npm run
     
     * "build" transpila de /src a /dist para soporte es2015.
     
@@ -45,3 +48,5 @@
     * "test" ejecuta las pruebas programadas con jest.
     
     * "coverage" ejecuta la verificación de la covertura de las pruebas. 
+    
+    * "docs" ejecuta la geneación de documentación del código para exponerla como una pagina html.
